@@ -1,0 +1,11 @@
+# Secrets & local data - never push
+.env
+*.env
+data/
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor backups
+data/backups/

@@ -1,0 +1,44 @@
+============================================================
+ DEPLOY THIS SITE TO NETLIFY (100% FREE)
+============================================================
+
+OPTION A - Drag & Drop (easiest, no install)
+  1. Go to https://app.netlify.com  -> login (Google/GitHub)
+  2. Click  "Add new site"  -> "Deploy manually"
+  3. Drag the  test_site  FOLDER  onto the page
+  4. Wait ~30 seconds -> you get  https://yourname.netlify.app
+
+OPTION B - Netlify CLI
+  1. Install:  npm install -g netlify-cli
+  2. cd C:\Users\Dell\Desktop\SEO-AGENT\test_site
+  3. netlify deploy --prod --dir=.  (first time: login + pick name)
+
+AFTER DEPLOY
+  - Your live URL will look like  https://something-1234.netlify.app
+  - Test it in the browser:  / , /about , /services , /contact ,
+    /blog/top-10-seo-tips , /blog/web-design-trends , /privacy
+  - /services-gone.html  -> intentionally returns custom 404 page
+  - /sitemap.xml  and  /robots.txt  work
+
+LINK SEO-AGENT TO THE LIVE SITE
+  1. Edit  C:\Users\Dell\Desktop\SEO-AGENT\.env
+        DOMAIN=https://yourname.netlify.app
+  2. Restart the dashboard (run.bat)
+  3. Open http://127.0.0.1:8511  -> Dashboard auto-scans your live site
+  4. Add API keys (.env) for live data:
+        SERPER_API_KEY      -> real Google rank tracking + keyword gap
+        PAGESPEED_API_KEY   -> real Core Web Vitals from Google servers
+        GROQ/OPENROUTER key -> real AI articles & reports
+  5. Reports -> "Generate New Report"
+
+WHAT THE SITE CONTAINS (intentional SEO test issues)
+  - /                          PERFECT control page (score 100)
+  - /about                      missing meta description (error)
+  - /services                   title > 60 chars + thin content
+  - /contact                    missing H1 + thin content
+  - /blog/top-10-seo-tips       PERFECT blog page (300+ words)
+  - /blog/web-design-trends     DUPLICATE title + image without alt
+  - /privacy                    very thin content
+  - /services-gone.html         broken link (404) - from trends page
+  -> SEO-AGENT's Site Audit should detect ALL of these automatically
+============================================================

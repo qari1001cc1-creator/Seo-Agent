@@ -1,0 +1,8 @@
+# Netlify rewrites - serve .html for pretty URLs
+/ /index.html 200
+/about /about.html 200
+/services /services.html 200
+/contact /contact.html 200
+/blog/top-10-seo-tips /blog/top-10-seo-tips.html 200
+/blog/web-design-trends /blog/web-design-trends.html 200
+/privacy /privacy.html 200
